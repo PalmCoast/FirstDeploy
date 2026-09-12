@@ -58,6 +58,13 @@ header,
   gap: 16px 24px;
 }
 
+.secondary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: flex-end;
+}
+
 .secondary-nav a {
   font-size: 12px;
   font-weight: 600;
@@ -65,6 +72,10 @@ header,
   text-transform: uppercase;
   color: var(--steel);
   text-decoration: none;
+}
+
+.secondary-nav a[aria-current="page"] {
+  color: var(--paper);
 }
 
 .secondary-nav a:hover { color: var(--paper-bright); }
@@ -130,6 +141,8 @@ header,
 .eyebrow a:hover { color: var(--paper-bright); }
 
 .hero { padding: 56px 0 64px; }
+
+.hero > .eyebrow { margin-bottom: 18px; }
 
 .flick-note + .hero { padding-top: 36px; }
 
@@ -264,6 +277,34 @@ h1,
 .btn-ghost:focus-visible {
   outline: 2px solid var(--steel);
   outline-offset: 3px;
+}
+
+.consult-aside {
+  margin-top: 16px;
+  max-width: 36em;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.consult-aside a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.consult-aside a:hover { color: var(--paper-bright); }
+.consult-aside a:focus-visible {
+  outline: 2px solid var(--steel);
+  outline-offset: 4px;
+}
+
+.consult-lane .eyebrow { margin-bottom: 12px; }
+
+.calendly-wrap {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
 }
 
 .leaks {
