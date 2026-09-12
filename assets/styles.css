@@ -142,6 +142,8 @@ header,
 
 .hero { padding: 56px 0 64px; }
 
+.hero > .eyebrow { margin-bottom: 18px; }
+
 .flick-note + .hero { padding-top: 36px; }
 
 h1,
