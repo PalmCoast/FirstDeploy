@@ -1,0 +1,37 @@
+# First Deploy
+
+> First Deploy is the after-hours desk and live apps for field operators, built by AgentHive Inc. Setup is $2,500 (live this week or you do not pay), then $1,500/month.
+
+First Deploy is part of AgentHive Inc in Palm Coast, Florida. Daniel Graham embeds working AI in real operations, then leaves it running. First Deploy is the product. Consulting is how you buy time in the room. Proof from a commercial earth mover.
+
+## This site
+- [First Deploy](https://firstdeploy.ai/): First Deploy is the after-hours desk and live apps for field operators, built by AgentHive Inc. Setup is $2,500 (live this week or you do not pay), then $1,500/month.
+- [Consult](https://firstdeploy.ai/consult): AI consultant who builds. Free 30-minute qualifier, then $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 (50% up front).
+- [Flick note](https://firstdeploy.ai/flick): Also live: Flick, the no-login recorder.
+- [About](https://firstdeploy.ai/about): Who builds First Deploy.
+- [Privacy](https://firstdeploy.ai/privacy): How we handle what you send.
+- [Terms](https://firstdeploy.ai/terms): Product and consult terms.
+
+## Company
+- [AgentHive Inc](https://agenthiveinc.com/): We sit in the work, then leave it running.
+- [First Deploy](https://firstdeploy.ai/): After-hours desk and live apps for field operators.
+- [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time.
+- [About AgentHive](https://agenthiveinc.com/about.html): Who we are and what we sell.
+
+## Related
+- [AgentHive Inc](https://agenthiveinc.com/): Palm Coast shop that embeds working AI, then leaves it running.
+- [ClaudeFarm](https://claudefarm.com/): Public storefront for First Deploy, consult time, and the live AgentHive apps.
+- [AI Pricing Calculators](https://aipricingcalculators.com/): Free LLM API cost calculator, then the live AgentHive offers.
+- [Flick](https://useflick.netlify.app/): Browser screen recorder. Send a link. No login wall.
+- [JobProof](https://jobproof-app-171.netlify.app/): Proof you did the work, not a resume stack.
+- [IndexMe](https://indexme.lol/): Pay-to-stand index. Pro $19.99, Studio $29.99, one-time.
+- [TONIGHT](https://send-tonight.netlify.app/): Paste the rate. Send tonight. $19.99 one-time.
+- [RateTrap](https://ratetrap.netlify.app/): Catch the rate trap before you sign. $29.99 one-time.
+- [ClaimCash](https://getclaimcash.netlify.app/): Find unclaimed money. $5 finder.
+- [Stateside Jobs](https://stateside-jobs.netlify.app/): US-authorized jobs board.
+- [Bot Lock](https://clawlock-security.netlify.app/): Lock down agent and tool access.
+- [Hire Daniel Graham](https://hire-daniel-graham.netlify.app/): AI consultant who builds. Contractor PM / FDE.
+
+## Optional
+- [Hive map](https://agenthiveinc.com/hive.html): Every live AgentHive site on one page.
+- [Hire Daniel Graham](https://hire-daniel-graham.netlify.app/): Contractor PM / FDE and AI consultant.
