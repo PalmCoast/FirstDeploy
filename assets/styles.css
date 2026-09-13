@@ -49,6 +49,8 @@ a { color: inherit; }
   margin: 0 auto;
 }
 
+.page-narrow { width: min(760px, calc(100% - 80px)); }
+
 header,
 .masthead {
   padding: 28px 0 0;
@@ -58,6 +60,13 @@ header,
   gap: 16px 24px;
 }
 
+.secondary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: flex-end;
+}
+
 .secondary-nav a {
   font-size: 12px;
   font-weight: 600;
@@ -65,6 +74,10 @@ header,
   text-transform: uppercase;
   color: var(--steel);
   text-decoration: none;
+}
+
+.secondary-nav a[aria-current="page"] {
+  color: var(--paper);
 }
 
 .secondary-nav a:hover { color: var(--paper-bright); }
@@ -130,6 +143,8 @@ header,
 .eyebrow a:hover { color: var(--paper-bright); }
 
 .hero { padding: 56px 0 64px; }
+
+.hero > .eyebrow { margin-bottom: 18px; }
 
 .flick-note + .hero { padding-top: 36px; }
 
@@ -266,6 +281,34 @@ h1,
   outline-offset: 3px;
 }
 
+.consult-aside {
+  margin-top: 16px;
+  max-width: 36em;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.consult-aside a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.consult-aside a:hover { color: var(--paper-bright); }
+.consult-aside a:focus-visible {
+  outline: 2px solid var(--steel);
+  outline-offset: 4px;
+}
+
+.consult-lane .eyebrow { margin-bottom: 12px; }
+
+.calendly-wrap {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+}
+
 .leaks {
   background: var(--raised);
   border-top: 1px solid var(--line);
@@ -338,7 +381,8 @@ h1,
 }
 
 .band h2,
-.leaks h2.check-title {
+.leaks h2.check-title,
+.legal h2 {
   font-family: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
   font-weight: 700;
   font-size: clamp(28px, 3.2vw, 40px);
@@ -441,6 +485,34 @@ h1,
 .who a { color: var(--ink); }
 .who a:hover { color: var(--paper-bright); }
 
+.legal {
+  padding: 48px 0 80px;
+}
+
+.legal p,
+.legal li {
+  color: var(--muted);
+  max-width: 42em;
+  margin-bottom: 16px;
+}
+
+.legal ul {
+  list-style: none;
+  border-top: 1px solid var(--line);
+  margin: 8px 0 28px;
+}
+
+.legal li {
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+
+.legal li a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.legal li a:hover { color: var(--paper-bright); }
+
+.legal h2 { margin-top: 36px; }
+
 footer {
   border-top: 1px solid var(--line);
   padding: 36px 0 48px;
@@ -460,31 +532,20 @@ footer {
 
 .phones { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 
-#fold-companion-strip {
-  max-width: 920px;
-  margin: 20px auto 48px;
-  padding: 14px 18px;
-  border: 1px solid #3a454f;
-  border-radius: 14px;
-  background: #1e242a;
-  color: #e9e0cc;
-  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+.legal-nav {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
 }
 
-#fold-companion-strip strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-#fold-companion-strip span { color: #c9c0ac; }
-
-#fold-companion-strip a {
-  color: #e9e0cc;
-  margin-left: 8px;
+.sticky-cta {
+  display: none;
 }
 
 @media (max-width: 820px) {
-  .page { width: min(1200px, calc(100% - 40px)); }
+  .page,
+  .page-narrow { width: min(1200px, calc(100% - 40px)); }
   .hero { padding: 48px 0 44px; }
   .flick-note-link { grid-template-columns: 1fr auto; }
   .flick-note-link .eyebrow { grid-column: 1 / -1; }
@@ -522,10 +583,35 @@ footer {
   .how li:last-child { border-bottom: 0; }
   .row { grid-template-columns: 1fr auto; }
   .row .go { display: none; }
+
+  body.has-sticky-cta { padding-bottom: 84px; }
+
+  .sticky-cta {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 80;
+    gap: 8px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: var(--ground);
+    border-top: 1px solid var(--line);
+  }
+
+  .sticky-cta .btn,
+  .sticky-cta .btn-ghost {
+    flex: 1;
+    width: auto;
+    min-height: 48px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 390px) {
-  .page { width: calc(100% - 32px); }
+  .page,
+  .page-narrow { width: calc(100% - 32px); }
   .hero { padding: 40px 0 36px; }
   .hero h1 { font-size: 36px; }
 }
