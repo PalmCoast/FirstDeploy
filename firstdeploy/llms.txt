@@ -1,0 +1,21 @@
+# First Deploy
+
+> First Deploy is the after-hours desk and live apps for field operators, built by AgentHive Inc. Setup is $1,500 (live this week or you do not pay), then $250/month.
+
+First Deploy is part of AgentHive Inc in Palm Coast, Florida. Daniel Graham embeds working AI in real operations, then leaves it running. First Deploy is the product. Consulting is how you buy time in the room. One operator who did this inside a live commercial earth-moving operation.
+
+## This site
+- [First Deploy](https://firstdeploy.ai/): After-hours voice line, live apps, one operator. Setup $1,500, then $250/month.
+- [Consult](https://firstdeploy.ai/consult): AI consultant who builds. Free 30-minute qualifier, then $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 (50% up front).
+- [About](https://firstdeploy.ai/about): Who builds First Deploy.
+- [Sister sites](https://firstdeploy.ai/hive): The rest of the AgentHive map, listed once.
+- [Privacy](https://firstdeploy.ai/privacy): How we handle what you send.
+- [Terms](https://firstdeploy.ai/terms): Product and consult terms.
+
+## Company
+- [AgentHive Inc](https://agenthiveinc.com/): We sit in the work, then leave it running.
+- [First Deploy](https://firstdeploy.ai/): After-hours desk and live apps for field operators.
+- [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time.
+
+## Optional
+- [Hive map](https://firstdeploy.ai/hive): Sister sites, listed once.

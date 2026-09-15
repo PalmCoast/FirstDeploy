@@ -2,8 +2,11 @@
 
 Marketing site for https://firstdeploy.ai
 
-Also live: [Flick](https://useflick.netlify.app) — skip the meeting. Record in the browser. Send a link. Watch is free; publish is the gate. Street $0 / Lights $19/mo / Marquee $99 once.
+**Clean publish tree:** [`firstdeploy/`](firstdeploy/). One offer page. Setup $1,500 (live this week or they don’t pay), then $250/month. Consult on `/consult`. Sister sites only on `/hive`.
 
-Static files. Publish directory is `.` Netlify site `first-deploy-ai` (id `59a673be-0880-43e0-a443-756e22cbf4ec`).
+```bash
+node firstdeploy/scripts/check-clean.mjs
+netlify deploy --prod --dir firstdeploy --site 59a673be-0880-43e0-a443-756e22cbf4ec
+```
 
-Public pages: `/`, `/consult`, `/flick`, `/about`, `/hive`, `/privacy`, `/terms`, plus `404.html`, `robots.txt`, `sitemap.xml`, `llms.txt`, and `og.png` (1200×630 PNG).
+Netlify site `first-deploy-ai` (id `59a673be-0880-43e0-a443-756e22cbf4ec`). See `firstdeploy/README.md` for the page list and guards.
