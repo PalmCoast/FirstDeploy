@@ -503,6 +503,11 @@ footer {
 
 .phones { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 
+.foot .eyebrow {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .legal-nav {
   margin-top: 12px;
   display: flex;

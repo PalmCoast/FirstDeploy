@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Fail if collage / banned public-copy strings appear in firstdeploy HTML.
- * Sister-brand names are allowed only on hive.html.
+ * Sister-brand names are allowed only on hive.html, except IndexMe
+ * (approved optional footer money destination).
  */
 import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
@@ -50,7 +51,6 @@ const oldOffer = [
 const sisterOffHive = [
   /useflick/i,
   /jobproof/i,
-  /indexme\.lol/i,
   /claudefarm/i,
   /send-tonight/i,
   /ratetrap/i,
@@ -60,6 +60,18 @@ const sisterOffHive = [
   /bot-lock/i,
   /hire-daniel-graham/i
 ];
+
+const footerMoney = [
+  "https://firstdeploy.ai/#check",
+  "https://calendly.com/coltsinsider/30min",
+  "https://firstdeploy.ai/consult",
+  "https://buy.stripe.com/aFacN50wkbXddL77ea2ZO0P",
+  "https://indexme.lol/"
+];
+
+const allowedStripe = new Set([
+  "https://buy.stripe.com/aFacN50wkbXddL77ea2ZO0P"
+]);
 
 const files = htmlFiles(root);
 const failures = [];
@@ -80,12 +92,39 @@ for (const file of files) {
       if (re.test(html)) failures.push(`${rel}: sister brand off /hive ${re}`);
     }
   }
+
+  const footers = html.match(/<footer\b[\s\S]*?<\/footer>/gi) || [];
+  for (const footer of footers) {
+    if (/href\s*=\s*["'][^"']*netlify\.app/i.test(footer)) {
+      failures.push(`${rel}: netlify.app href in footer`);
+    }
+  }
 }
 
 const home = readFileSync(join(root, "index.html"), "utf8");
 if (!/\$1,500/.test(home)) failures.push("index.html: missing setup $1,500");
 if (!/\$250/.test(home)) failures.push("index.html: missing monthly $250");
-if (/buy\.stripe\.com/.test(home)) failures.push("index.html: duplicate pay script");
+if (/<script\b[^>]*buy\.stripe\.com/i.test(home)) {
+  failures.push("index.html: stripe pay script");
+}
+const homeStripe = [...home.matchAll(/https:\/\/buy\.stripe\.com\/[A-Za-z0-9]+/g)].map((m) => m[0]);
+for (const url of new Set(homeStripe)) {
+  if (!allowedStripe.has(url)) failures.push(`index.html: unexpected stripe url ${url}`);
+}
+
+const homeFooter = (home.match(/<footer\b[\s\S]*?<\/footer>/i) || [""])[0];
+for (const url of footerMoney) {
+  if (!homeFooter.includes(`href="${url}"`) && !homeFooter.includes(`href='${url}'`)) {
+    failures.push(`index.html: missing footer money link ${url}`);
+  }
+}
+const moneyHrefs = [...homeFooter.matchAll(/href\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]);
+const moneyOnly = moneyHrefs.filter((href) =>
+  footerMoney.includes(href) || /buy\.stripe\.com|calendly\.com|indexme\.lol|infrastructure\.agenthiveinc\.com/i.test(href)
+);
+if (moneyOnly.length > 5) {
+  failures.push(`index.html: more than 5 money links in footer (${moneyOnly.length})`);
+}
 
 if (failures.length) {
   console.error("check-clean failed:");
