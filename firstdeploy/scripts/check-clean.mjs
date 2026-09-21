@@ -17,7 +17,7 @@ function htmlFiles(dir) {
     if (name.isDirectory()) {
       if (name.name === "node_modules" || name.name === ".git") continue;
       out.push(...htmlFiles(full));
-    } else if (name.name.endsWith(".html")) {
+    } else if (name.name.endsWith(".html") || name.name === "llms.txt") {
       out.push(full);
     }
   }
@@ -37,7 +37,9 @@ const collage = [
   /14 live apps/i,
   /\$70k\b/i,
   /\$70,000/,
-  /flick-note/i
+  /flick-note/i,
+  /earth-?moving/i,
+  /earth-?mover/i
 ];
 
 const oldOffer = [
