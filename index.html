@@ -3,275 +3,279 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>First Deploy — The after-hours desk and live apps for field operators.</title>
-<meta name="description" content="You run dirt, plants, or a shop. An after-hours voice line, the live apps your people open, one operator. Setup $1,500. Then $250/month. Start the 2-minute check.">
-<meta name="theme-color" content="#100F0D">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>First Deploy — Factory for after-hours AI. Live this week or you don't pay.</title>
+<meta name="description" content="AgentHive Inc's First Deploy: after-hours desk + live apps for operators. Intake → ship → leave it running. Setup $1,500. Then $250/mo. Braid, HillMirror, JobProof, GuyThread, Consult on the same floor.">
+<meta name="theme-color" content="#020617">
 <link rel="canonical" href="https://firstdeploy.ai/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="First Deploy">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" content="First Deploy — The after-hours desk and live apps for field operators.">
-<meta property="og:description" content="You run dirt, plants, or a shop. An after-hours voice line, the live apps your people open, one operator. Setup $1,500. Then $250/month.">
+<meta property="og:title" content="First Deploy — Live this week. Or you don't pay.">
+<meta property="og:description" content="After-hours desk + live apps for operators. Factory floor by AgentHive Inc. Setup $1,500. Then $250/mo.">
 <meta property="og:url" content="https://firstdeploy.ai/">
-<meta property="og:image" content="https://firstdeploy.ai/og.png?v=20260913">
-<meta property="og:image:secure_url" content="https://firstdeploy.ai/og.png?v=20260913">
-<meta property="og:image:type" content="image/png">
+<meta property="og:image" content="https://firstdeploy.ai/og.png?v=factory-20260922">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="First Deploy — Live this week. Or you don't pay.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="First Deploy — The after-hours desk and live apps for field operators.">
-<meta name="twitter:description" content="You run dirt, plants, or a shop. An after-hours voice line, the live apps your people open, one operator. Setup $1,500. Then $250/month.">
-<meta name="twitter:image" content="https://firstdeploy.ai/og.png?v=20260913">
-<meta name="twitter:image:alt" content="First Deploy — Live this week. Or you don't pay.">
+<meta name="twitter:title" content="First Deploy — Live this week. Or you don't pay.">
+<meta name="twitter:description" content="After-hours desk + live apps for operators. Setup $1,500. Then $250/mo.">
+<meta name="twitter:image" content="https://firstdeploy.ai/og.png?v=factory-20260922">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<link rel="describedby" href="/llms.txt">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://agenthiveinc.com/#organization",
-      "name": "AgentHive Inc",
-      "url": "https://agenthiveinc.com/",
-      "telephone": ["+1-320-335-6186", "+1-509-357-2230"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Palm Coast",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/daniel-graham-92057a15"
-      ],
-      "description": "AgentHive Inc embeds working AI in real operations, then leaves it running. First Deploy is the product."
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://firstdeploy.ai/#website",
-      "url": "https://firstdeploy.ai/",
-      "name": "First Deploy",
-      "publisher": {
-        "@id": "https://agenthiveinc.com/#organization"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "First Deploy",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "url": "https://firstdeploy.ai/",
-      "image": "https://firstdeploy.ai/og.png",
-      "publisher": {
-        "@id": "https://agenthiveinc.com/#organization"
-      },
-      "description": "First Deploy is the after-hours desk and live apps for field operators, built by AgentHive Inc.",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Setup",
-          "price": "1500.00",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "name": "Monthly desk",
-          "price": "250.00",
-          "priceCurrency": "USD",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "250.00",
-            "priceCurrency": "USD",
-            "unitText": "MONTH"
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
+<link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body class="has-sticky-cta">
-  <a class="skip" href="#check">Skip to the 2-minute check</a>
+<body>
+<a class="skip" href="#line">Skip to the product line</a>
+<div class="floor" aria-hidden="true"></div>
 
-  <div class="page">
-    <header class="masthead">
-      <p class="eyebrow">First Deploy</p>
-      <nav class="secondary-nav" aria-label="Also from the shop">
-        <a href="https://useflick.netlify.app">Flick</a>
-        <a href="/consult">Consult</a>
-      </nav>
-    </header>
+<header class="wrap">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="/">
+      <span class="mark">FD</span>
+      <strong>FIRST DEPLOY</strong>
+    </a>
+    <div class="nav-links">
+      <a href="#line">Line</a>
+      <a href="#moat">Moat</a>
+      <a href="#price">Price</a>
+      <a href="/consult">Consult</a>
+      <a class="nav-cta" href="#check">Start the 2-min check</a>
+    </div>
+  </nav>
+</header>
 
-    <aside class="flick-note" aria-label="Flick is live">
-      <a class="flick-note-link" href="https://useflick.netlify.app">
-        <span class="eyebrow">Also live</span>
-        <span class="flick-copy">Skip the meeting — Flick. Record in the browser. Send a link.</span>
-        <span class="flick-go">Open →</span>
-      </a>
+<main>
+  <section class="wrap hero">
+    <div>
+      <p class="eyebrow">AgentHive Inc · Palm Coast factory</p>
+      <h1>Intake in.<br>Live ops <em>out.</em></h1>
+      <p class="lede">Not another agency deck. A <strong>neon production floor</strong> that catches after-hours demand, ships the app your crew opens, and leaves it running. Built by AgentHive Inc — the moat behind the line.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#check">Start the 2-minute check</a>
+        <a class="btn btn-ghost" href="tel:+13203356186">Call +1 320-335-6186</a>
+      </div>
+      <p class="fine">Setup <strong style="color:#f8fafc">$1,500</strong> — live this week or you don't pay. Then <strong style="color:#f8fafc">$250/mo</strong>. Need an operator in the room? <a href="/consult">Book the free 30</a>.</p>
+    </div>
+    <aside class="funnel" style="background-image:linear-gradient(160deg,rgba(2,6,23,.75),rgba(2,6,23,.92)),url(/assets/factory-hero.jpg);background-size:cover;background-position:center" aria-label="Intake funnel">
+      <svg viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="g1" x1="240" y1="20" x2="240" y2="300"><stop stop-color="#67e8f9" stop-opacity=".9"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".15"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="2.2"/></filter>
+  </defs>
+  <!-- intake rails -->
+  <path d="M40 36 H440" stroke="#67e8f9" stroke-opacity=".35" stroke-dasharray="4 6"/>
+  <path d="M70 70 H410" stroke="#67e8f9" stroke-opacity=".25" stroke-dasharray="4 6"/>
+  <!-- funnel -->
+  <path d="M60 40 L190 170 L190 290 L290 290 L290 170 L420 40 Z" fill="url(#g1)" fill-opacity=".12" stroke="#67e8f9" stroke-width="1.5"/>
+  <path d="M120 40 L210 150 L270 150 L360 40" stroke="#a5f3fc" stroke-width="1" stroke-opacity=".5"/>
+  <!-- particles -->
+  <g filter="url(#blur)" fill="#67e8f9">
+    <circle cx="100" cy="55" r="3"/><circle cx="160" cy="48" r="2"/><circle cx="220" cy="42" r="2.5"/>
+    <circle cx="300" cy="50" r="3"/><circle cx="360" cy="58" r="2"/><circle cx="200" cy="95" r="2.5"/>
+    <circle cx="250" cy="110" r="3"/><circle cx="230" cy="145" r="2"/><circle cx="240" cy="200" r="3.5"/>
+    <circle cx="240" cy="245" r="4"/>
+  </g>
+  <!-- output bay -->
+  <rect x="175" y="286" width="130" height="18" rx="2" stroke="#67e8f9" fill="rgba(34,211,238,.15)"/>
+  <text x="240" y="299" text-anchor="middle" fill="#67e8f9" font-family="IBM Plex Sans,sans-serif" font-size="9" letter-spacing="2">LIVE LINE</text>
+</svg>
+      <div class="funnel-caption">
+        <div>Missed calls · quotes · night leads<br><span>INTAKE</span></div>
+        <div style="text-align:right">Desk + apps live<br><span>OUTPUT</span></div>
+      </div>
     </aside>
+  </section>
 
-    <section class="hero">
-      <h1>The after-hours desk and live apps for field operators.</h1>
-      <p class="sub">You run dirt, plants, or a shop. Jobs call after the office closes. Quotes die on the whiteboard. The crew asks you what to do next.</p>
-      <p class="keep-line">First Deploy takes that job and keeps it.</p>
-
-      <div class="offer-grid">
-        <div class="offer">
-          <p class="eyebrow">You keep</p>
-          <ul>
-            <li>An after-hours voice line that books work in your language</li>
-            <li>The live apps your people actually open (dispatch, quotes, the board that used to live on the wall)</li>
-            <li>One operator who already did this inside a live field operation — still running</li>
-          </ul>
-        </div>
-        <div class="offer">
-          <p class="eyebrow">You do not get</p>
-          <ul>
-            <li>A pile of single-feature toys</li>
-            <li>An hourly tutor who teaches your team to prompt ChatGPT</li>
-            <li>A consulting tour stuffed into the $1,500 setup. That work is a separate, paid lane.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="price">
-        <p class="eyebrow">Price</p>
-        <p><strong>Setup: $1,500.</strong> One leak live this week or you don’t pay. Same number as the board today.</p>
-        <p><strong>Then $250/month</strong> per company to keep the desk and the apps on. Turn it off and the line goes dark. That’s the point.</p>
-      </div>
-
-      <div class="cta-block">
-        <a class="btn" href="#check">Start the 2-minute check.</a>
-        <a class="btn-ghost" href="tel:+13203356186">+1 320-335-6186</a>
-      </div>
-      <p class="consult-aside">Need an operator in the room, not the desk? <a href="/consult">Book the free 30 →</a></p>
-    </section>
+  <div class="wrap">
+    <div class="stats" role="group" aria-label="Proof strip">
+      <div class="stat"><b>48–72h</b><span>Typical time leak → live</span></div>
+      <div class="stat"><b>$1,500</b><span>Setup. Or you don't pay.</span></div>
+      <div class="stat"><b>$250/mo</b><span>Desk + apps stay on</span></div>
+    </div>
   </div>
 
-  <section class="leaks" id="check">
-    <div class="page">
-      <h2 class="check-title">2-minute check</h2>
-      <p class="lead">Pick the leak. Setup is $1,500 — one leak live this week or you don’t pay.</p>
-      <div class="leak-grid">
-        <a class="leak" href="https://firstdeploy-quiz.netlify.app">
-          <span class="rule" aria-hidden="true"></span>
-          <span class="idx">01</span>
-          <h2>Missed calls</h2>
-        </a>
-        <a class="leak" href="https://firstdeploy-quotes.netlify.app">
-          <span class="rule" aria-hidden="true"></span>
-          <span class="idx">02</span>
-          <h2>Dead quotes</h2>
-        </a>
-        <a class="leak" href="https://firstdeploy-noshows.netlify.app">
-          <span class="rule" aria-hidden="true"></span>
-          <span class="idx">03</span>
-          <h2>No-shows</h2>
-        </a>
-      </div>
+  <section class="wrap" id="line">
+    <div class="section-head">
+      <p class="eyebrow">The line</p>
+      <h2>New blood on the same floor.</h2>
+      <p>First Deploy is the after-hours desk. The apps below are what we ship beside it — same operator, same factory, no theater.</p>
+    </div>
+    <div class="line">
+      <a class="card core" href="#check">
+        <p class="tag">Core · First Deploy</p>
+        <h3>After-hours desk</h3>
+        <p>Voice line + live apps for dirt, plants, and shops. One leak fixed. Left running.</p>
+        <span class="go">Start the check</span>
+      </a>
+      <a class="card" href="https://getbraid.ai" rel="noopener">
+        <p class="tag">Braid · Stamp Desk</p>
+        <h3>Stamp desk</h3>
+        <p>Cross-radix agree + compress + SHA-256 seal desk for field and lab frames. Local stamp free; hosted stamp $29.</p>
+        <span class="go">Open Braid</span>
+      </a>
+      <a class="card" href="https://hillmirror-firstdeploy.netlify.app" rel="noopener">
+        <p class="tag">HillMirror</p>
+        <h3>They file. You follow.</h3>
+        <p>They file. You follow. Congressional PTR board + copy book. Free feed; Unlock 535 from $9.99/mo.</p>
+        <span class="go">Open HillMirror</span>
+      </a>
+      <a class="card" href="https://jobproof.firstdeploy.ai" rel="noopener">
+        <p class="tag">JobProof</p>
+        <h3>Proof the job happened</h3>
+        <p>Photos, timestamps, a clean record your crew leaves and the customer can see. Before the argument.</p>
+        <span class="go">Open JobProof</span>
+      </a>
+      <a class="card" href="https://guythread-firstdeploy.netlify.app" rel="noopener">
+        <p class="tag">GuyThread</p>
+        <h3>Fantasy + guy life</h3>
+        <p>AI SMS / call / email assistant for lineups, waivers, tools, cars, gear. Same thread. No new app.</p>
+        <span class="go">Open GuyThread</span>
+      </a>
+      
+      <a class="card" href="https://flick.firstdeploy.ai" rel="noopener">
+        <p class="tag">Flick</p>
+        <h3>Skip the meeting</h3>
+        <p>Record in the browser. Watch free. Pay to publish. Street $0 · Lights $19/mo · Marquee $99.</p>
+        <span class="go">Open Flick</span>
+      </a>
+      <a class="card" href="https://indexme.lol" rel="noopener">
+        <p class="tag">IndexMe</p>
+        <h3>Build it. Get it found.</h3>
+        <p>Honest IndexNow + AI discovery files. Pro $19.99 · Studio $29.99 one-time.</p>
+        <span class="go">Open IndexMe</span>
+      </a>
+      <a class="card" href="/consult">
+        <p class="tag">Consult</p>
+        <h3>Operator in the room</h3>
+        <p>Free 30 qualifier. Then $75 / 30 min · $150 / hour · $1,250 pack. Not the desk — the human.</p>
+        <span class="go">Book the free 30</span>
+      </a>
+      <a class="card" href="https://askyard.firstdeploy.ai" rel="noopener">
+        <p class="tag">AskYard</p>
+        <h3>Shop-floor answers</h3>
+        <p>Free front door for field questions. Paid desk stays on firstdeploy.ai.</p>
+        <span class="go">Open AskYard</span>
+      </a>
+      <a class="card" href="https://netyard.firstdeploy.ai" rel="noopener">
+        <p class="tag">NetYard</p>
+        <h3>Shop network, no AD hell</h3>
+        <p>Six questions → addressing, Linux directory Windows can join, shares, guest Wi-Fi, VPN, scripts.</p>
+        <span class="go">Open NetYard</span>
+      </a>
     </div>
   </section>
 
-  <section class="band" id="how">
-    <div class="page">
-      <h2>One operator. One workflow. Live in 48–72 hours.</h2>
-      <p class="lead">Done-for-you embed. We already did this inside a live operation. You keep the workflow. If it isn’t live this week, you don’t pay.</p>
-      <ol class="how">
-        <li>
-          <span class="n">01</span>
-          <h3>Pick the leak</h3>
-          <p>Twelve questions. Then you see what that leak is costing.</p>
-        </li>
-        <li>
-          <span class="n">02</span>
-          <h3>Scope in writing</h3>
-          <p>Fixed price. Fixed deliverables. No hourly surprises.</p>
-        </li>
-        <li>
-          <span class="n">03</span>
-          <h3>We embed and ship</h3>
-          <p>One operator plus the agents that do the work. Working before the week is out.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="band" id="pricing">
-    <div class="page">
-      <h2>Fixed price. From the live board.</h2>
-      <p class="lead">Setup is $1,500 — one leak live this week or you don’t pay. Then $250/month per company. AI consulting is a different offer.</p>
-      <div class="ledger">
-        <a class="row" href="https://buy.stripe.com/aFacN50wkbXddL77ea2ZO0P">
-          <span class="name">Setup</span>
-          <span class="amt">$1,500</span>
-          <span class="go">Pay →</span>
-        </a>
-        <div class="row">
-          <span class="name">Monthly desk</span>
-          <span class="amt">$250/mo</span>
-          <span class="go">Per company</span>
-        </div>
-      </div>
-      <p class="note">Setup on this board is $1,500, then $250/month per company. Paid consulting is $75 / 30 min, $150 / hour, or the $1,250 pack on <a href="/consult">/consult</a>.</p>
-    </div>
-  </section>
-
-  <section class="band who" id="who">
-    <div class="page">
-      <h2>Who embeds</h2>
-      <p><a href="https://hire-daniel-graham.netlify.app">Daniel Graham</a>. One operator. Already done inside a live field operation.</p>
-    </div>
-  </section>
-
-  <section class="band consult-lane" id="consult-lane">
-    <div class="page">
-      <p class="eyebrow">Also offered</p>
-      <h2>AI consulting that ships.</h2>
-      <p class="lead">Free 30-minute qualifier. Then paid time: $75 / 30 minutes, $150 / hour, or a 10-hour pack at $1,250 (50% up front). Referrals paid. LLM-alignment work paid.</p>
-      <div class="cta-block">
-        <a class="btn-ghost" href="/consult">See the consulting offer</a>
-        <a class="btn-ghost" href="https://calendly.com/coltsinsider/30min">Book the free 30</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="page foot">
+  <section class="wrap" id="moat">
+    <div class="moat">
       <div>
-        <div>First Deploy · Palm Coast</div>
-        <div class="phones" style="margin-top:10px">
-          <a href="tel:+13203356186">First Deploy +1 320-335-6186</a>
-          <a href="tel:+15093572230">AgentHive +1 509-357-2230</a>
-        </div>
-        <nav class="legal-nav" aria-label="Legal">
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a href="/about">About</a>
-        </nav>
+        <p class="eyebrow">The moat</p>
+        <h2>AgentHive Inc builds the floor. First Deploy is the product that ships.</h2>
+        <p>Other shops sell slides. We embed working AI in real ops, then leave it running. The hive is the system: operators, apps, after-hours desk, consult lane — one company.</p>
+        <ul class="moat-list">
+          <li>Field-first: dirt, plants, shops — not SaaS theater.</li>
+          <li>Live this week or you don't pay the setup.</li>
+          <li>Apps on the line (Braid, HillMirror, JobProof, GuyThread) prove the factory is real.</li>
+        </ul>
+        <p class="fine" style="margin-top:1.25rem"><a href="https://agenthiveinc.com/">AgentHive Inc →</a></p>
       </div>
-      <div class="phones">
-        <a href="https://agenthiveinc.com/">AgentHive</a>
-        <a href="/consult">Consult</a>
-        <a href="https://useflick.netlify.app/">Flick</a>
-        <a href="https://jobproof-app-171.netlify.app/">JobProof</a>
-        <a href="https://indexme.lol/">IndexMe</a>
-        <a href="https://claudefarm.com/">ClaudeFarm</a>
-        <a href="https://agenthiveinc.com/hive">Hive map</a>
+      <div class="funnel" style="min-height:260px">
+        <p class="tag" style="color:var(--neon);letter-spacing:.18em;text-transform:uppercase;font-size:.68rem;margin-bottom:.75rem">Factory logic</p>
+        <p style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;line-height:1.05;margin-bottom:1rem">LEAD → DESK → APP → PROOF</p>
+        <p style="color:var(--mute);font-size:.92rem">Intake catches the night call. The desk books it. The app your crew opens stays lit. JobProof closes the loop. That is the floor.</p>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <div class="sticky-cta" aria-label="Start the 2-minute check">
-    <a class="btn" href="#check">2-minute check</a>
-    <a class="btn-ghost" href="tel:+13203356186">Call</a>
+  <section class="wrap" id="sectors">
+    <div class="section-head">
+      <p class="eyebrow">Verticals</p>
+      <h2>Same factory. Different leaks.</h2>
+      <p>Hard stills — not soft corporate posters. Deep blue. Brilliant white. Neon rails.</p>
+    </div>
+    <div class="sectors">
+      <article class="sector sector-home" style="background-image:linear-gradient(180deg,rgba(2,6,23,.25),rgba(2,6,23,.92)),url(/assets/sector-home.png)">
+        <p class="tag">Home services &amp; trades</p>
+        <h3>Your phone dies at 2 a.m. Your business doesn't.</h3>
+        <p>HVAC · plumbing · electrical — every after-hours lead answered, booked, followed up.</p>
+      </article>
+      <article class="sector sector-auto" style="background-image:linear-gradient(180deg,rgba(2,6,23,.25),rgba(2,6,23,.92)),url(/assets/sector-auto.png)">
+        <p class="tag">Auto &amp; truck repair</p>
+        <h3>AI writes the estimate while you're under the hood.</h3>
+        <p>Estimates, booking, follow-up that texts back before they call the next shop.</p>
+      </article>
+      <article class="sector sector-finance" style="background-image:linear-gradient(180deg,rgba(2,6,23,.25),rgba(2,6,23,.92)),url(/assets/sector-finance.png)">
+        <p class="tag">Accounting &amp; finance ops</p>
+        <h3>Month-end close, quotes, pricing — handled by AI.</h3>
+        <p>Production AI on your data. Department RAG. Fewer hours. Cleaner books.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap" id="price">
+    <div class="section-head">
+      <p class="eyebrow">Board prices</p>
+      <h2>Clear. Locked. No theater.</h2>
+    </div>
+    <div class="price-grid">
+      <div class="price featured">
+        <p class="tag" style="color:var(--neon);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase">Setup</p>
+        <p class="amt">$1,500</p>
+        <p class="lbl">One leak live this week or you don't pay.</p>
+        <a class="btn btn-primary" href="#check">Start the check</a>
+      </div>
+      <div class="price">
+        <p class="tag" style="color:var(--neon);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase">Desk</p>
+        <p class="amt">$250<span style="font-size:1rem;color:var(--mute)">/mo</span></p>
+        <p class="lbl">Per company. Desk + apps stay on. Kill it and the line goes dark.</p>
+      </div>
+      <div class="price">
+        <p class="tag" style="color:var(--neon);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase">Consult</p>
+        <p class="amt">$75+</p>
+        <p class="lbl">Free 30, then $75 / 30 min · $150 / hr · $1,250 pack.</p>
+        <a class="btn btn-ghost" href="/consult">See consult</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="check">
+    <div class="cta-band">
+      <p class="eyebrow" style="justify-content:center">Intake open</p>
+      <h2>Feed the funnel.</h2>
+      <p>Two minutes. Tell us the leak. If we can light it this week, you get the desk. If we can't, you don't pay setup.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-primary" href="https://firstdeploy.ai/#check">Run the 2-minute check</a>
+        <a class="btn btn-ghost" href="tel:+13203356186">+1 320-335-6186</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="foot-row">
+    <div>
+      <strong style="color:#f8fafc;font-family:var(--font-display);letter-spacing:.08em">FIRST DEPLOY</strong>
+      <p style="margin-top:.35rem">Built by <a href="https://agenthiveinc.com/" style="color:var(--neon)">AgentHive Inc</a> · Palm Coast, FL</p>
+      <p>firstdeploy.ai · Free 30-min intake — (320) 335-6186</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://getbraid.ai">Braid</a>
+      <a href="https://jobproof.firstdeploy.ai">JobProof</a>
+      <a href="https://hillmirror-firstdeploy.netlify.app">HillMirror</a>
+      <a href="https://guythread-firstdeploy.netlify.app">GuyThread</a>
+      <a href="/consult">Consult</a>
+      <a href="https://agenthiveinc.com/">AgentHive</a>
+    </div>
   </div>
+  <div class="codehype-badge" style="margin-top:1.25rem;opacity:.9">
+<a href="https://codehype.ai/product/first-deploy?utm_source=codehype_badge" target="_blank" rel="noopener noreferrer">
+  <img src="https://codehype.ai/badges/first-deploy.svg?variant=find-us&v=20" alt="Featured on CodeHype" width="180" height="65" loading="lazy" decoding="async" style="display:inline-block;border:0;width:100%;max-width:180px;height:auto;max-height:65px;" />
+</a>
+  </div>
+  <div class="twelve-tools-link" style="margin-top:.6rem;font-size:.75rem;opacity:.85"><a href="https://twelve.tools" target="_blank" rel="noopener">Featured on Twelve Tools</a></div>
+  <div class="fazier-badge" style="margin-top:14px;opacity:.78;line-height:0"><a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width="120" alt="Fazier badge" /></a></div>
+  <div class="launchaf-badge" style="margin-top:14px;opacity:.78;line-height:0"><a href="https://launchaf.com/products/product-105" target="_blank" rel="noopener" data-launchaf-badge="true"><img src="https://launchaf.com/api/badge/light?v=launchaf-blue-2026-2" alt="Featured on LaunchAF" width="200" height="56" /></a></div>
+</footer>
 </body>
 </html>
