@@ -1,40 +1,66 @@
 User-agent: GPTBot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: Googlebot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: Bingbot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: LinkedInBot
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 User-agent: *
 Allow: /
+Disallow: /go/
+Disallow: /go-stats
 
 Sitemap: https://firstdeploy.ai/sitemap-index.xml
