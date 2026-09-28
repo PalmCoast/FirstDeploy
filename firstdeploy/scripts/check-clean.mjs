@@ -67,13 +67,13 @@ const footerMoney = [
   "https://firstdeploy.ai/#check",
   "https://calendly.com/coltsinsider/30min",
   "https://firstdeploy.ai/consult",
-  "https://buy.stripe.com/aFacN50wkbXddL77ea2ZO0P",
+  "/go/setup?from=fd-index",
   "https://indexme.lol/"
 ];
 
-const allowedStripe = new Set([
-  "https://buy.stripe.com/aFacN50wkbXddL77ea2ZO0P"
-]);
+// Pay buttons go through the first-party /go/<name> click counter
+// (netlify/functions/go.mjs at the repo root), never straight to Stripe.
+const allowedStripe = new Set([]);
 
 const files = htmlFiles(root);
 const failures = [];
@@ -122,7 +122,7 @@ for (const url of footerMoney) {
 }
 const moneyHrefs = [...homeFooter.matchAll(/href\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]);
 const moneyOnly = moneyHrefs.filter((href) =>
-  footerMoney.includes(href) || /buy\.stripe\.com|calendly\.com|indexme\.lol|infrastructure\.agenthiveinc\.com/i.test(href)
+  footerMoney.includes(href) || /^\/go\/|buy\.stripe\.com|calendly\.com|indexme\.lol|infrastructure\.agenthiveinc\.com/i.test(href)
 );
 if (moneyOnly.length > 5) {
   failures.push(`index.html: more than 5 money links in footer (${moneyOnly.length})`);
