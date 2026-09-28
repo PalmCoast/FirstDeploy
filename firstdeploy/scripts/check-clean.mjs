@@ -64,10 +64,10 @@ const sisterOffHive = [
 ];
 
 const footerMoney = [
-  "https://firstdeploy.ai/#check",
+  "/go/start?from=fd-index-footer",
   "https://calendly.com/coltsinsider/30min",
   "https://firstdeploy.ai/consult",
-  "/go/setup?from=fd-index",
+  "/go/start?from=fd-index-setup",
   "https://indexme.lol/"
 ];
 

@@ -31,6 +31,16 @@
   force = true
 
 [[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
+  status = 200
+
+[[redirects]]
   from = "/consult"
   to = "/consult.html"
   status = 200

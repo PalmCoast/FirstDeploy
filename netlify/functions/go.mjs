@@ -1,5 +1,5 @@
 import { getStore } from "@netlify/blobs";
-import { LINKS } from "../lib/links.mjs";
+import { LINKS, ALIASES } from "../lib/links.mjs";
 
 const BOT_RE =
   /bot|crawl|spider|slurp|preview|facebookexternalhit|embedly|quora link|whatsapp|telegram|discord|skype|curl|wget|python|httpx|aiohttp|go-http|java\/|okhttp|axios|node-fetch|undici|headless|phantom|puppeteer|playwright|lighthouse|pagespeed|monitor|uptime|scan|check|validator|feed|fetch|archiver|semrush|ahrefs|mj12|dotbot|petalbot|bytespider|gptbot|claude|perplexity|chatgpt|oai-search|google-extended|bingpreview/i;
@@ -25,7 +25,8 @@ function fromPage(url, referer) {
 
 export default async (req, context) => {
   const url = new URL(req.url);
-  const name = clean(context.params?.name || url.pathname.split("/").pop(), 60);
+  const asked = clean(context.params?.name || url.pathname.split("/").pop(), 60);
+  const name = ALIASES[asked] || asked;
   const target = LINKS[name];
   if (!target) {
     return new Response("Not found", { status: 404, headers: { "cache-control": "no-store" } });
