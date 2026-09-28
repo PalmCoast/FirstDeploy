@@ -6,7 +6,7 @@ Marketing site for https://firstdeploy.ai
 
 ```bash
 node firstdeploy/scripts/check-clean.mjs
-netlify deploy --prod --dir firstdeploy --site 59a673be-0880-43e0-a443-756e22cbf4ec
+netlify deploy --prod --dir . --site 59a673be-0880-43e0-a443-756e22cbf4ec
 ```
 
 Netlify site `first-deploy-ai` (id `59a673be-0880-43e0-a443-756e22cbf4ec`). See `firstdeploy/README.md` for the page list and guards.
