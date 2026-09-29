@@ -2,7 +2,7 @@
 
 Marketing site for https://firstdeploy.ai
 
-**Clean publish tree:** [`firstdeploy/`](firstdeploy/). One offer page. Setup $1,500 (live this week or they don’t pay), then $250/month. Consult on `/consult`. Sister sites only on `/hive`.
+**Clean publish tree:** [`firstdeploy/`](firstdeploy/). One offer page. Setup $1,500 (live this week on a written plan), then $250/month. Consult on `/consult`. Sister sites only on `/hive`.
 
 ```bash
 node firstdeploy/scripts/check-clean.mjs

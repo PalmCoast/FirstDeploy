@@ -8,7 +8,7 @@ Netlify site `first-deploy-ai` (id `59a673be-0880-43e0-a443-756e22cbf4ec`).
 
 After-hours voice + live apps + one operator.
 
-- Setup **$1,500** — live this week or they don’t pay
+- Setup **$1,500** — live this week on a written plan
 - Then **$250/month**
 - Consult lives on `/consult`
 - Sister sites listed once on `/hive`
