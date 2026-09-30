@@ -27,4 +27,7 @@
   <url>
     <loc>https://firstdeploy.ai/llms.txt</loc>
   </url>
+  <url>
+    <loc>https://firstdeploy.ai/llms-full.txt</loc>
+  </url>
 </urlset>
