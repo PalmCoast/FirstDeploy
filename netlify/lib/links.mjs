@@ -8,7 +8,10 @@ export const LINKS = {
   "consult-pack": "https://buy.stripe.com/7sY9ATenabXd7mJ7ea2ZO1i", // AI Consult — 10-hour pack deposit, $625
   // Main offer: First Deploy — $1,500 setup (one-time, first invoice) + $250/mo desk.
   // plink_1UKgGxFJWYd4pYuxOQm0QoYJ, redirects to https://firstdeploy.ai/thanks after payment.
-  "start": "https://buy.stripe.com/14A00jfre3qH0YlfKG2ZO1v"
+  "start": "https://buy.stripe.com/14A00jfre3qH0YlfKG2ZO1v",
+  // 50% deposit: $875 one-time (half of the $1,750 first invoice). plink_1ULPTDFJWYd4pYux3UzwCLK5,
+  // redirects to https://firstdeploy.ai/thanks after payment.
+  "deposit": "https://buy.stripe.com/9B68wP92Qe5layV8ie2ZO1w"
 };
 
 // Old names that should now land on another link (logged under the new name).
