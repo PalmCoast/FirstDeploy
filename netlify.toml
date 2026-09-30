@@ -5,6 +5,31 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
+# Stale duplicate tree and deploy notes: never serve them (audit 2026-09-30).
+[[redirects]]
+  from = "/firstdeploy/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/firstdeploy"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/readme.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
 # Function sources / deps live inside the publish dir; never serve them.
 [[redirects]]
   from = "/netlify/*"
