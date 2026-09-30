@@ -40,12 +40,15 @@ export default async (req, context) => {
   const kind = test ? "test" : bot ? "bot" : "human";
 
   const dest = new URL(target);
-  const ref = `fd_${from}_${name}`.replace(/[^A-Za-z0-9_-]/g, "_").slice(0, 200);
+  // Optional ad/source tag passed through from the landing page (assets/src.js), e.g. src=gads.
+  const src = clean(url.searchParams.get("src"), 24);
+  const ref = `fd_${src ? src + "_" : ""}${from}_${name}`.replace(/[^A-Za-z0-9_-]/g, "_").slice(0, 200);
   dest.searchParams.set("client_reference_id", ref);
   dest.searchParams.set("utm_source", "firstdeploy.ai");
   dest.searchParams.set("utm_medium", "site");
   dest.searchParams.set("utm_campaign", name);
   dest.searchParams.set("utm_content", from);
+  if (src) dest.searchParams.set("utm_term", src);
 
   const prefetch = /prefetch|prerender/i.test(
     (req.headers.get("sec-purpose") || "") + (req.headers.get("purpose") || "") + (req.headers.get("x-moz") || "")
@@ -59,6 +62,7 @@ export default async (req, context) => {
     const event = {
       name,
       from,
+      src: src || null,
       referer: referer.slice(0, 500),
       ts,
       ua: ua.slice(0, 400),

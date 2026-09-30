@@ -2,7 +2,7 @@
 
 Marketing site for https://firstdeploy.ai
 
-**Clean publish tree:** [`firstdeploy/`](firstdeploy/). One offer page. Setup $1,500 (live this week on a written plan), then $250/month. Consult on `/consult`. Sister sites only on `/hive`.
+**Publish tree:** the repo root (deployed with the Netlify CLI). The old `firstdeploy/` copy is stale and is 301-redirected to `/` in netlify.toml; `README.md` is blocked (404). One offer page. Setup $1,750 (50% deposit to start, live this week on a written plan), then $250/month from go-live. Consult on `/consult`. Sister sites only on `/hive`.
 
 ```bash
 node firstdeploy/scripts/check-clean.mjs
