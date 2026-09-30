@@ -1,0 +1,78 @@
+# First Deploy: full details
+
+> First Deploy is an after-hours phone desk and live apps for field-service businesses, built by AgentHive Inc in Palm Coast, Florida. Setup is $1,750: start with 50% ($875) and pay the balance at completion, or pay in full. The desk is $250/month, starting at go-live (invoiced separately). One leak goes live this week on a written plan.
+
+## Business
+- Name: First Deploy, a product of AgentHive Inc (AGENTHIVEINCCOM LLC)
+- Location: Palm Coast, FL (Flagler County), United States
+- Service area: Florida statewide, focused on these counties:
+  - Flagler (Palm Coast, Bunnell, Flagler Beach)
+  - Volusia (Daytona Beach, Ormond Beach, DeLand, Port Orange)
+  - St. Johns (St. Augustine)
+  - Duval (Jacksonville)
+  - Orange (Orlando)
+  
+  Setup is done remotely, so businesses anywhere in the US can use it.
+- Trades served: HVAC, plumbing, roofing, electrical, pest control, landscaping. Also auto and truck repair shops.
+- Phone: +1 320-335-6186
+- Email: daniel@agenthiveinc.com
+- Booking: https://calendly.com/coltsinsider/30min (free 30-minute call)
+- Web: https://firstdeploy.ai
+
+## Service: after-hours desk
+- What it is: a voice line that picks up the calls a business misses after hours. It takes the caller's details, books the job and sends the follow-up text.
+- Who it is for: HVAC, plumbing, roofing, electrical, pest control and landscaping businesses that get calls at night or on weekends.
+- How it starts: we pick one leak (for example missed night calls), write the plan and put it live this week.
+- Price: part of the $1,750 setup. After that, $250/month per company from go-live.
+
+## Service: live apps
+- What it is: the tools the crew and office open every day, such as estimates, booking and follow-up texts, and job records (photos and timestamps via JobProof).
+- How it works: built beside the desk, on the same written plan, and left running.
+- Price: included in the setup and the $250/month desk.
+
+## Service: consult
+- What it is: time with the operator (Daniel Graham) to look at a workflow and decide what to build.
+- Price: the first 30 minutes are free (a qualifier). After that it's $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 with $625 up front.
+- Book: https://calendly.com/coltsinsider/30min or https://firstdeploy.ai/consult
+
+## Pricing
+- Setup: $1,750 one-time.
+  - Option 1: 50% to start ($875 deposit), balance at completion.
+  - Option 2: pay in full, $1,750.
+- Desk: $250/month per company, starting at go-live, invoiced separately. Cancel any time. When the month is turned off, the line goes dark.
+- Projects scoped at 90 days are billed half up front and half at completion.
+- Payments run through Stripe. A signed scope or the Stripe checkout takes precedence over the website.
+
+## FAQ
+**Where are you located?**
+Palm Coast, Florida, in Flagler County.
+
+**Which areas do you serve?**
+All of Florida, with a focus on Flagler, Volusia, St. Johns, Duval and Orange counties and the Jacksonville, Daytona Beach and Orlando metros. Setup is remote, so businesses anywhere in the US can use it.
+
+**Which trades do you work with?**
+HVAC, plumbing, roofing, electrical, pest control and landscaping, plus auto and truck repair shops.
+
+**How much does it cost?**
+$1,750 setup. You can start with 50% ($875) and pay the balance at completion, or pay in full. Then $250/month for the desk, starting at go-live.
+
+**When does the $250/month start?**
+At go-live. It is invoiced separately from the setup.
+
+**How long does setup take?**
+One leak goes live this week, on a written plan we agree on first.
+
+**Can I cancel the monthly desk?**
+Yes, at any time. When the month is turned off, the line goes dark.
+
+**Do you need to visit in person?**
+No. Setup is done remotely.
+
+**What results can I expect?**
+We build and run the workflow we write down together. We do not promise a third-party platform result, a search ranking or a revenue number.
+
+**How do I get started?**
+Book a free 30-minute call at https://calendly.com/coltsinsider/30min, call +1 320-335-6186, or start checkout at https://firstdeploy.ai/pricing.
+
+**Who is behind First Deploy?**
+AgentHive Inc (AGENTHIVEINCCOM LLC), Palm Coast, Florida. Operator: Daniel Graham.

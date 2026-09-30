@@ -1,37 +1,43 @@
 # First Deploy
 
-> First Deploy is the after-hours desk and live apps for field operators, built by AgentHive Inc. Setup is $1,750 — start with a 50% deposit ($875) and pay the balance at completion, or pay in full at $1,750. Then $250/month for the desk, starting at go-live (invoiced). Live this week on a written plan.
+> First Deploy is an after-hours phone desk and live apps for field-service businesses, built by AgentHive Inc in Palm Coast, Florida. Setup is $1,750: start with 50% ($875) and pay the balance at completion, or pay in full. The desk is $250/month, starting at go-live (invoiced separately). One leak goes live this week on a written plan.
 
-First Deploy is part of AgentHive Inc in Palm Coast, Florida. Daniel Graham embeds working AI in real operations, then leaves it running. First Deploy is the product. Consulting is how you buy time in the room. One operator who did this inside a live field operation.
+## Business
+- Name: First Deploy, a product of AgentHive Inc (AGENTHIVEINCCOM LLC)
+- Location: Palm Coast, FL (Flagler County), United States
+- Service area: Florida statewide, focused on Flagler, Volusia, St. Johns, Duval and Orange counties and the Jacksonville, Daytona Beach and Orlando metros. Setup is done remotely, so businesses anywhere in the US can use it.
+- Trades served: HVAC, plumbing, roofing, electrical, pest control, landscaping (also auto and truck repair shops)
 
-## This site
-- [First Deploy](https://firstdeploy.ai/): First Deploy is the after-hours desk and live apps for field operators, built by AgentHive Inc. Setup is $1,750 — start with a 50% deposit ($875) and pay the balance at completion, or pay in full at $1,750. Then $250/month for the desk, starting at go-live (invoiced). Live this week on a written plan.
-- [Consult](https://firstdeploy.ai/consult): AI consultant who builds. Free 30-minute qualifier, then $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 (50% up front).
-- [Flick note](https://firstdeploy.ai/flick): Also live: Flick, the no-login recorder.
+## Services
+- After-hours desk: a voice line that answers calls after hours, books the job and sends the follow-up.
+- Live apps: the working tools the crew opens, such as estimates, booking and follow-up texts, and job records.
+- Consult: a free 30-minute qualifier, then paid operator time.
+
+## Pricing
+- Setup: $1,750 one-time. Start with 50% ($875 deposit) and pay the balance at completion, or pay in full at $1,750.
+- Desk: $250/month per company, starting at go-live (invoiced separately). Cancel any time.
+- Consult: free 30-minute qualifier, then $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 ($625 up front).
+- Checkout is by Stripe.
+
+## Contact
+- Phone: +1 320-335-6186
+- Email: daniel@agenthiveinc.com
+- Book a free 30-minute call: https://calendly.com/coltsinsider/30min
+- Web: https://firstdeploy.ai
+
+## Pages
+- [First Deploy](https://firstdeploy.ai/): What the desk and apps do, and how to start.
+- [Pricing](https://firstdeploy.ai/pricing): $1,750 setup ($875 to start or pay in full), then $250/month from go-live.
+- [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time.
 - [About](https://firstdeploy.ai/about): Who builds First Deploy.
-- [Privacy](https://firstdeploy.ai/privacy): How we handle what you send.
 - [Terms](https://firstdeploy.ai/terms): Product and consult terms.
+- [Privacy](https://firstdeploy.ai/privacy): How we handle what you send.
+- [Full details](https://firstdeploy.ai/llms-full.txt): Each service in detail, plus an FAQ.
 
 ## Company
-- [AgentHive Inc](https://agenthiveinc.com/): We sit in the work, then leave it running.
-- [First Deploy](https://firstdeploy.ai/): After-hours desk and live apps for field operators.
-- [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time.
-- [About AgentHive](https://agenthiveinc.com/about): Who we are and what we sell.
-
-## Related
-- [AgentHive Inc](https://agenthiveinc.com/): Palm Coast shop that embeds working AI, then leaves it running.
-- [ClaudeFarm](https://claudefarm.com/): Public storefront for First Deploy, consult time, and the live AgentHive apps.
-- [AI Pricing Calculators](https://aipricingcalculators.com/): Free LLM API cost calculator, then the live AgentHive offers.
-- [Flick](https://useflick.netlify.app/): Browser screen recorder. Send a link. No login wall.
-- [JobProof](https://jobproof-app-171.netlify.app/): Proof you did the work, not a resume stack.
-- [IndexMe](https://indexme.lol/): Pay-to-stand index. Pro $19.99, Studio $29.99, one-time.
-- [TONIGHT](https://send-tonight.netlify.app/): Paste the rate. Send tonight. $19.99 one-time.
-- [RateTrap](https://ratetrap.netlify.app/): Catch the rate trap before you sign. $29.99 one-time.
-- [ClaimCash](https://getclaimcash.netlify.app/): Find unclaimed money. $5 finder.
-- [Stateside Jobs](https://stateside-jobs.netlify.app/): US-authorized jobs board.
-- [Bot Lock](https://bot-lock.netlify.app/): Lock down agent and tool access.
-- [Hire Daniel Graham](https://hire-daniel-graham.netlify.app/): AI consultant who builds. Contractor PM / FDE.
-
-## Optional
-- [Hive map](https://agenthiveinc.com/about): Every live AgentHive site on one page.
-- [Hire Daniel Graham](https://hire-daniel-graham.netlify.app/): Contractor PM / FDE and AI consultant.
+- [AgentHive Inc](https://agenthiveinc.com/): The Palm Coast, FL company behind First Deploy.
+- [About AgentHive](https://agenthiveinc.com/about): Legal name and contact.
+- [ClaudeFarm](https://claudefarm.com/): Storefront for First Deploy, consult time and the AgentHive apps.
+- [JobProof](https://jobproof.firstdeploy.ai/): Job photo and timestamp records for crews.
+- [Flick](https://flick.firstdeploy.ai/): Browser screen recorder.
+- [IndexMe](https://indexme.lol/): IndexNow and AI discovery files. Pro $19.99, Studio $29.99, one-time.
