@@ -95,6 +95,11 @@
   to = "/flick.html"
   status = 200
 
+[[redirects]]
+  from = "/battle"
+  to = "/battle.html"
+  status = 200
+
 [[headers]]
   for = "/og.png"
   [headers.values]
