@@ -37,12 +37,15 @@ export default async (req, context) => {
   const from = fromPage(url, referer);
   const test = TEST_RE.test(ua);
   const bot = !test && (!ua || BOT_RE.test(ua));
-  const kind = test ? "test" : bot ? "bot" : "human";
+  // Audit mode: agents and site audits call /go/<name>?src=audit. We never redirect them to
+  // Stripe, because loading a Payment Link creates a real Checkout Session.
+  const audit = /^audit/i.test(url.searchParams.get("src") || "");
+  const kind = audit ? "audit" : test ? "test" : bot ? "bot" : "human";
 
   const dest = new URL(target);
   // Optional ad/source tag passed through from the landing page (assets/src.js), e.g. src=gads.
   const src = clean(url.searchParams.get("src"), 24);
-  const ref = `fd_${src ? src + "_" : ""}${from}_${name}`.replace(/[^A-Za-z0-9_-]/g, "_").slice(0, 200);
+  const ref = `${audit ? "audit" : "fd"}_${src && !audit ? src + "_" : ""}${from}_${name}`.replace(/[^A-Za-z0-9_-]/g, "_").slice(0, 200);
   dest.searchParams.set("client_reference_id", ref);
   dest.searchParams.set("utm_source", "firstdeploy.ai");
   dest.searchParams.set("utm_medium", "site");
@@ -68,6 +71,7 @@ export default async (req, context) => {
       ua: ua.slice(0, 400),
       bot,
       test,
+      audit,
       country: context.geo?.country?.code || null,
       target
     };
@@ -79,6 +83,19 @@ export default async (req, context) => {
     } catch (e) {
       console.error("go: blob write failed", e);
     }
+  }
+
+  if (audit) {
+    return new Response(`audit: /go/${name} -> ${target}\n`, {
+      status: 200,
+      headers: {
+        "content-type": "text/plain; charset=utf-8",
+        "x-go-target": target,
+        "x-go-ref": ref,
+        "cache-control": "no-store, max-age=0",
+        "x-robots-tag": "noindex, nofollow"
+      }
+    });
   }
 
   return new Response(null, {

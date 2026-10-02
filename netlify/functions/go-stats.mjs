@@ -59,7 +59,7 @@ export default async (req) => {
       lines.push(`${n.padEnd(14)} ${String(l.human).padStart(6)} ${String(l.bot).padStart(5)} ${String(l.test).padStart(5)} ${String(l.total).padStart(6)}  ${top}`);
     }
     lines.push("", "recent:");
-    for (const e of recent) lines.push(`${e.ts}  ${e.name.padEnd(13)} ${(e.test ? "test" : e.bot ? "bot" : "human").padEnd(5)} from=${e.from} ref=${e.referer || "-"} ua=${(e.ua || "").slice(0, 80)}`);
+    for (const e of recent) lines.push(`${e.ts}  ${e.name.padEnd(13)} ${(e.audit ? "audit" : e.test ? "test" : e.bot ? "bot" : "human").padEnd(5)} from=${e.from} ref=${e.referer || "-"} ua=${(e.ua || "").slice(0, 80)}`);
     return new Response(lines.join("\n") + "\n", { headers: { ...headers, "content-type": "text/plain; charset=utf-8" } });
   }
   return Response.json(out, { headers });
