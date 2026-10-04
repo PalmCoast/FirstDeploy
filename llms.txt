@@ -28,11 +28,17 @@
 ## Pages
 - [First Deploy](https://firstdeploy.ai/): What the desk and apps do, and how to start.
 - [Pricing](https://firstdeploy.ai/pricing): $1,750 setup ($875 to start or pay in full), then $250/month from go-live.
-- [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time.
+- [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time. Canonical copy is https://agenthiveinc.com/consult.
 - [About](https://firstdeploy.ai/about): Who builds First Deploy.
+- [Blog](https://firstdeploy.ai/blog): After-hours guides for trade shops.
+- [What an answering service costs](https://firstdeploy.ai/blog/what-an-answering-service-costs): Published per-minute, per-call, and flat prices, each cited.
+- [Vs Smith.ai](https://firstdeploy.ai/vs/smith-ai): First Deploy and Smith.ai, using Smith.ai's published plans.
+- [Vs Ruby](https://firstdeploy.ai/vs/ruby): First Deploy and Ruby, using Ruby's published plans.
+- [Vs Goodcall](https://firstdeploy.ai/vs/goodcall): First Deploy and Goodcall, using Goodcall's published plans.
 - [Terms](https://firstdeploy.ai/terms): Product and consult terms.
 - [Privacy](https://firstdeploy.ai/privacy): How we handle what you send.
 - [Full details](https://firstdeploy.ai/llms-full.txt): Each service in detail, plus an FAQ.
+- /flick on this host redirects to https://flick.firstdeploy.ai/.
 
 ## Company
 - [AgentHive Inc](https://agenthiveinc.com/): The Palm Coast, FL company behind First Deploy.

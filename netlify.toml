@@ -92,7 +92,54 @@
 
 [[redirects]]
   from = "/flick"
-  to = "/flick.html"
+  to = "https://flick.firstdeploy.ai/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/flick.html"
+  to = "https://flick.firstdeploy.ai/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/after-hours-playbook"
+  to = "/blog/after-hours-playbook.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/missed-after-hours-call-cost"
+  to = "/blog/missed-after-hours-call-cost.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/answering-service-vs-ai-phone-desk"
+  to = "/blog/answering-service-vs-ai-phone-desk.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/what-an-answering-service-costs"
+  to = "/blog/what-an-answering-service-costs.html"
+  status = 200
+
+[[redirects]]
+  from = "/vs/smith-ai"
+  to = "/vs/smith-ai.html"
+  status = 200
+
+[[redirects]]
+  from = "/vs/ruby"
+  to = "/vs/ruby.html"
+  status = 200
+
+[[redirects]]
+  from = "/vs/goodcall"
+  to = "/vs/goodcall.html"
   status = 200
 
 [[headers]]
