@@ -142,6 +142,86 @@
   to = "/vs/goodcall.html"
   status = 200
 
+# Bot Wars is parked: battle-page-preview never merged (dates TBA, signup not live).
+# /battle still draws visits, and /assets/battle/og-battle.png is the top 404.
+# Send the page home. Point the missing share card at the live site OG image.
+# No contest page or offer-price changes.
+[[redirects]]
+  from = "/battle"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/battle/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/battle.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/assets/battle/og-battle.png"
+  to = "/og.png"
+  status = 301
+  force = true
+
+# /go/:name is the click tracker. Bare /go and /go/ do not match it and 404.
+# /go/start is the $1,750 pay-in-full Payment Link (302).
+[[redirects]]
+  from = "/go"
+  to = "/go/start"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/go/"
+  to = "/go/start"
+  status = 301
+  force = true
+
+# No /book, /contact, or /vs index. Home has the phone, the free-call button,
+# and the comparison cards. Named /vs/* pages above stay as they are.
+[[redirects]]
+  from = "/book"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/book/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vs"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vs/"
+  to = "/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/og.png"
   [headers.values]
