@@ -43,7 +43,6 @@
 ## Company
 - [AgentHive Inc](https://agenthiveinc.com/): The Palm Coast, FL company behind First Deploy.
 - [About AgentHive](https://agenthiveinc.com/about): Legal name and contact.
-- [ClaudeFarm](https://claudefarm.com/): Storefront for First Deploy, consult time and the AgentHive apps.
 - [JobProof](https://jobproof.firstdeploy.ai/): Job photo and timestamp records for crews.
 - [Flick](https://flick.firstdeploy.ai/): Browser screen recorder.
 - [IndexMe](https://indexme.lol/): IndexNow and AI discovery files. Pro $19.99, Studio $29.99, one-time.

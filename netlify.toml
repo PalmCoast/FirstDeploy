@@ -86,6 +86,11 @@
   status = 200
 
 [[redirects]]
+  from = "/disclosure"
+  to = "/disclosure.html"
+  status = 200
+
+[[redirects]]
   from = "/hive"
   to = "/hive.html"
   status = 200
