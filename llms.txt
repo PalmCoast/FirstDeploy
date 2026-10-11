@@ -17,6 +17,7 @@
 - Setup: $1,750 one-time. Start with 50% ($875 deposit) and pay the balance at completion, or pay in full at $1,750.
 - Desk: $250/month per company, starting at go-live (invoiced separately). Cancel any time.
 - Consult: free 30-minute qualifier, then $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 ($625 up front).
+- First Workflow: $97 one time. Pick one AI workflow (Lead Catcher, Review Asker, Quote Chaser, Inbox Sorter, or Morning Brief). Built in your own Zapier or Make account in 3 business days, with a walkthrough video and a 1-page guide. No subscription.
 - Checkout is by Stripe.
 
 ## Contact
@@ -28,6 +29,7 @@
 ## Pages
 - [First Deploy](https://firstdeploy.ai/): What the desk and apps do, and how to start.
 - [Pricing](https://firstdeploy.ai/pricing): $1,750 setup ($875 to start or pay in full), then $250/month from go-live.
+- [First Workflow](https://firstdeploy.ai/workflow): $97 one time for one AI workflow from the menu, built in your tools in 3 business days.
 - [Consult](https://firstdeploy.ai/consult): Free 30-minute qualifier, then paid time. Canonical copy is https://agenthiveinc.com/consult.
 - [About](https://firstdeploy.ai/about): Who builds First Deploy.
 - [Blog](https://firstdeploy.ai/blog): After-hours guides for trade shops.
