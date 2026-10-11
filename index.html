@@ -98,12 +98,9 @@
   ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body>
+<body class="has-sticky-cta">
 <a class="skip" href="#line">Skip to the product line</a>
 <div class="floor" aria-hidden="true"></div>
 
@@ -118,6 +115,7 @@
       <a href="#moat">Moat</a>
       <a href="/pricing">Pricing</a>
       <a href="/consult">Consult</a>
+      <a class="nav-offer" href="/workflow" data-ph-cta="first-workflow-nav" data-ph-from="home-nav">Start for $97</a>
       <a class="nav-cta" href="/go/start?from=home-nav">Get started</a>
     </div>
   </nav>
@@ -134,6 +132,7 @@
         <a class="btn btn-primary" href="/go/start?from=home-hero">Get started — $1,750 setup</a>
         <a class="btn btn-ghost" href="https://calendly.com/coltsinsider/30min">Book a free 30-min call</a>
       </div>
+      <p class="fine"><a href="/workflow" data-ph-cta="first-workflow-nav" data-ph-from="home-hero">Not ready for the desk? Get one AI workflow built for $97 →</a></p>
       <p class="fine">Setup <strong style="color:#f8fafc">$1,750</strong> — live this week on a written plan. Start with 50% ($875). Then <strong style="color:#f8fafc">$250/mo</strong> from go-live. <a href="/pricing">See pricing</a> · Call <a href="tel:+13203356186">+1 320-335-6186</a>.</p>
     </div>
     <aside class="funnel">
@@ -255,7 +254,7 @@
       <article class="sector">
         <picture>
           <source srcset="/assets/sector-home.webp" type="image/webp">
-          <img src="/assets/sector-home.png" alt="Illustration of a house at night with cyan light in the windows and a satellite dish." width="1280" height="720" loading="lazy" decoding="async">
+          <img src="/assets/sector-home.jpg" alt="Illustration of a house at night with cyan light in the windows and a satellite dish." width="1280" height="720" loading="lazy" decoding="async">
         </picture>
         <div class="sector-copy">
           <p class="tag">Home services &amp; trades</p>
@@ -266,7 +265,7 @@
       <article class="sector">
         <picture>
           <source srcset="/assets/sector-auto.webp" type="image/webp">
-          <img src="/assets/sector-auto.png" alt="Illustration of a dark repair shop with a truck on a lift and cyan work lights." width="1280" height="720" loading="lazy" decoding="async">
+          <img src="/assets/sector-auto.jpg" alt="Illustration of a dark repair shop with a truck on a lift and cyan work lights." width="1280" height="720" loading="lazy" decoding="async">
         </picture>
         <div class="sector-copy">
           <p class="tag">Auto &amp; truck repair</p>
@@ -277,7 +276,7 @@
       <article class="sector">
         <picture>
           <source srcset="/assets/sector-finance.webp" type="image/webp">
-          <img src="/assets/sector-finance.png" alt="Illustration of a dim office with a glowing monitor showing a grid and a ring light." width="1280" height="720" loading="lazy" decoding="async">
+          <img src="/assets/sector-finance.jpg" alt="Illustration of a dim office with a glowing monitor showing a grid and a ring light." width="1280" height="720" loading="lazy" decoding="async">
         </picture>
         <div class="sector-copy">
           <p class="tag">Accounting &amp; finance ops</p>
@@ -288,12 +287,39 @@
     </div>
   </section>
 
+  <section class="wrap" id="workflow">
+    <div class="section-head">
+      <p class="eyebrow">Start small. Start today.</p>
+      <h2>One AI workflow, built for you. $97.</h2>
+      <p>Pick one from the menu. We build it in your own tools in 3 business days, with a walkthrough video and a 1-page guide. No subscription. No meetings.</p>
+    </div>
+    <ul class="menu">
+      <li><strong>Lead Catcher.</strong> Every new lead gets an instant reply in your voice, logged to a sheet, and you get pinged.</li>
+      <li><strong>Review Asker.</strong> Job done? The customer gets a personal review request with your Google link.</li>
+      <li><strong>Quote Chaser.</strong> Quotes get followed up on day 2 and day 5 unless they've replied.</li>
+      <li><strong>Inbox Sorter.</strong> Email sorted into leads, customers, invoices and junk, with replies drafted (never sent) in your voice.</li>
+      <li><strong>Morning Brief.</strong> Yesterday's leads, jobs and sales in one plain-English email at 7 AM.</li>
+    </ul>
+    <div class="hero-actions">
+      <!-- TODO: replace with Stripe Payment Link after Daniel approves -->
+      <a class="btn btn-primary" href="#TODO-STRIPE-FIRST-WORKFLOW" data-ph-cta="first-workflow" data-ph-from="home-workflow">Get my workflow, $97</a>
+      <a href="/workflow" style="align-self:center;color:var(--neon);min-height:44px;display:inline-flex;align-items:center">See what's included</a>
+    </div>
+  </section>
+
   <section class="wrap" id="price">
     <div class="section-head">
       <p class="eyebrow">Board prices</p>
       <h2>Clear. Locked. No theater.</h2>
     </div>
     <div class="price-grid">
+      <div class="price">
+        <p class="tag" style="color:var(--neon);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase">Starter: First Workflow $97</p>
+        <p class="amt">$97</p>
+        <p class="lbl">One workflow from the menu. Built in your tools in 3 business days. Walkthrough video and a 1-page guide. No subscription.</p>
+        <!-- TODO: replace with Stripe Payment Link after Daniel approves -->
+        <a class="btn btn-primary" href="#TODO-STRIPE-FIRST-WORKFLOW" data-ph-cta="first-workflow" data-ph-from="home-price">Get my workflow, $97</a>
+      </div>
       <div class="price featured">
         <p class="tag" style="color:var(--neon);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase">Setup</p>
         <p class="amt">$1,750</p>
@@ -393,13 +419,19 @@
       <a href="/consult">Consult</a>
       <a href="https://agenthiveinc.com/about">About</a>
       <a href="https://agenthiveinc.com/">AgentHive</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
     </div>
   </div>
   <div class="twelve-tools-link" style="margin-top:.6rem;font-size:.75rem;opacity:.85"><a href="https://twelve.tools" target="_blank" rel="noopener">Featured on Twelve Tools</a></div>
-  <div class="fazier-badge" style="margin-top:14px;opacity:.78;line-height:0"><a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width="120" alt="Fazier badge" /></a></div>
-  <div class="launchaf-badge" style="margin-top:14px;opacity:.78;line-height:0"><a href="https://launchaf.com/products/product-105" target="_blank" rel="noopener" data-launchaf-badge="true"><img src="https://launchaf.com/api/badge/light?v=launchaf-blue-2026-2" alt="Featured on LaunchAF" width="200" height="56" /></a></div>
+  <div class="fazier-badge" style="margin-top:14px;opacity:.78;line-height:0"><a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width="120" alt="Fazier badge" loading="lazy" decoding="async" /></a></div>
+  <div class="launchaf-badge" style="margin-top:14px;opacity:.78;line-height:0"><a href="https://launchaf.com/products/product-105" target="_blank" rel="noopener" data-launchaf-badge="true"><img src="https://launchaf.com/api/badge/light?v=launchaf-blue-2026-2" alt="Featured on LaunchAF" width="200" height="56" loading="lazy" decoding="async" /></a></div>
   <p class="disclosure-line" style="margin-top:.6rem;font-size:.75rem;opacity:.85">We earn commissions only on tools we use ourselves. <a href="/disclosure" style="text-decoration:underline">Disclosure</a></p>
 </footer>
+<div class="sticky-cta" aria-label="Get started">
+  <a class="btn btn-primary" href="/go/start?from=home-sticky">Get started — $1,750 setup</a>
+</div>
 <script src="/assets/src.js" defer></script>
+<script src="/assets/ph.js" defer data-posthog-project="598301"></script>
 </body>
 </html>

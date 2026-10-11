@@ -55,6 +55,33 @@
   status = 404
   force = true
 
+# Stray id file in the publish root. Not a page.
+[[redirects]]
+  from = "/40602f6b-ecf3-406b-a8e5-2e9f601462b6.txt"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/workflow"
+  to = "/workflow/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/workflow/"
+  to = "/workflow/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/workflow/thanks"
+  to = "/workflow/thanks.html"
+  status = 200
+
+[[redirects]]
+  from = "/workflow/thanks/"
+  to = "/workflow/thanks.html"
+  status = 200
+
 [[redirects]]
   from = "/pricing"
   to = "/pricing.html"
@@ -151,14 +178,30 @@
   for = "/og.png"
   [headers.values]
     Content-Type = "image/png"
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
     Access-Control-Allow-Origin = "*"
 
 [[headers]]
   for = "/apple-touch-icon.png"
   [headers.values]
     Content-Type = "image/png"
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# Images, fonts, CSS, and JS under /assets. Not immutable: filenames are not hashed.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 
 [[headers]]
   for = "/robots.txt"
