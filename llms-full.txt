@@ -35,6 +35,16 @@
 - Price: the first 30 minutes are free (a qualifier). After that it's $75 / 30 min, $150 / hour, or a 10-hour pack at $1,250 with $625 up front.
 - Book: https://calendly.com/coltsinsider/30min or https://firstdeploy.ai/consult
 
+## Service: First Workflow
+- What it is: one AI workflow from a fixed menu, built in the buyer's own Zapier or Make account.
+- Menu (pick one): Lead Catcher, Review Asker, Quote Chaser, Inbox Sorter, Morning Brief.
+- What you get: the working workflow, one AI step in your tone, a ~3-minute walkthrough video, a 1-page guide, and one round of tweaks within 7 days.
+- Time: 3 business days from a completed intake form.
+- Price: $97 one time. No subscription. You cover your own tool and AI usage.
+- Limits: one workflow, up to 3 apps you already use, no phone lines, no hosting, no custom code.
+- Page: https://firstdeploy.ai/workflow
+- After payment, the intake form is https://firstdeploy.ai/workflow/thanks
+
 ## Pricing
 - Setup: $1,750 one-time.
   - Option 1: 50% to start ($875 deposit), balance at completion.

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Workflow intake — First Deploy</title>
+<meta name="description" content="Tell us your business, website, and tools. We build the First Workflow you picked in 3 business days.">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="https://firstdeploy.ai/workflow/thanks">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="First Deploy">
+<meta property="og:title" content="First Workflow intake — First Deploy">
+<meta property="og:description" content="Tell us your business, website, and tools. We build the First Workflow you picked in 3 business days.">
+<meta property="og:url" content="https://firstdeploy.ai/workflow/thanks">
+<meta property="og:image" content="https://firstdeploy.ai/og.png?v=seo-20261004">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Illustration of a cyan-lit factory floor with a truck and a glowing funnel.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="First Workflow intake — First Deploy">
+<meta name="twitter:description" content="Tell us your business, website, and tools. We build the First Workflow you picked in 3 business days.">
+<meta name="twitter:image" content="https://firstdeploy.ai/og.png?v=seo-20261004">
+<meta name="twitter:image:alt" content="Illustration of a cyan-lit factory floor with a truck and a glowing funnel.">
+<script>document.documentElement.classList.toggle("intake-done",/(?:^|[?&])ok=1(?:&|$)/.test(location.search));</script>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#intake">Skip to the form</a>
+<div class="floor" aria-hidden="true"></div>
+
+<header class="wrap">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="/">
+      <span class="mark">FD</span>
+      <strong>FIRST DEPLOY</strong>
+    </a>
+    <div class="nav-links">
+      <a href="/workflow">First Workflow</a>
+      <a href="/pricing">Pricing</a>
+      <a class="nav-offer" href="/workflow" data-ph-cta="first-workflow-nav" data-ph-from="workflow-thanks-nav">Start for $97</a>
+      <a class="nav-cta" href="/go/start?from=workflow-thanks-nav">Get started</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap" id="intake" style="padding-top:3rem">
+    <div class="intake-form">
+      <div class="section-head">
+        <p class="eyebrow">First Workflow</p>
+        <h1>You're in. Tell us your tools.</h1>
+        <p>Business name, website, the workflow you picked, and the tools you already use. A free Zapier or Make account works for most of the menu. We build it in 3 business days.</p>
+      </div>
+      <form class="intake" name="first-workflow-intake" method="POST" action="/workflow/thanks?ok=1" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="first-workflow-intake">
+        <p class="hp"><label>Don't fill this out if you're a person <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <label><span>Business name</span><input type="text" name="business-name" required autocomplete="organization"></label>
+        <label><span>Website</span><input type="url" name="website" required placeholder="https://" inputmode="url"></label>
+        <label><span>Workflow picked</span>
+          <select name="workflow" required>
+            <option value="">Choose one</option>
+            <option>Lead Catcher</option>
+            <option>Review Asker</option>
+            <option>Quote Chaser</option>
+            <option>Inbox Sorter</option>
+            <option>Morning Brief</option>
+          </select>
+        </label>
+        <label><span>Tools used</span><input type="text" name="tools" required placeholder="Gmail or Outlook, Google Sheets, your form or CRM"></label>
+        <label><span>Zapier or Make account email</span><input type="email" name="account-email" required autocomplete="email"></label>
+        <label><span>Notes</span><textarea name="notes" placeholder="Tone, the review link, anything we should know"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send the intake</button>
+      </form>
+    </div>
+    <div class="intake-thanks">
+      <div class="section-head">
+        <p class="eyebrow">First Workflow</p>
+        <h1>Got it.</h1>
+        <p>We'll build the workflow you picked and email you when it's ready to connect. You connect your own accounts. We never take your passwords.</p>
+      </div>
+      <p class="fine"><a href="/workflow">Back to First Workflow</a> · <a href="tel:+13203356186">+1 320-335-6186</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="foot-row">
+    <div>
+      <strong style="color:#f8fafc;font-family:var(--font-display);letter-spacing:.08em">FIRST DEPLOY</strong>
+      <p style="margin-top:.35rem">Built by <a href="https://agenthiveinc.com/" style="color:var(--neon)">AgentHive Inc</a> · Palm Coast, FL</p>
+      <p>firstdeploy.ai · <a href="tel:+13203356186">+1 320-335-6186</a></p>
+    </div>
+    <div class="foot-links">
+      <a href="/pricing">Pricing</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/src.js" defer></script>
+<script src="/assets/ph.js" defer data-posthog-project="598301"></script>
+</body>
+</html>
