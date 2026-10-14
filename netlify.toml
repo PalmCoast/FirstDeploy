@@ -62,6 +62,20 @@
   status = 404
   force = true
 
+# Desk Check runs on its own Netlify site (check.firstdeploy.ai). Links to
+# firstdeploy.ai/desk-check 404'd because this site never had that route.
+[[redirects]]
+  from = "/desk-check"
+  to = "https://check.firstdeploy.ai/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/desk-check/*"
+  to = "https://check.firstdeploy.ai/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/workflow"
   to = "/workflow/index.html"
