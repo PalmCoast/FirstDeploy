@@ -1,6 +1,8 @@
 [build]
   publish = "."
 
+# /40602f6b-...txt is the IndexNow key file (Bing/Yandex). Keep it served; do not 404 it.
+
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
@@ -51,13 +53,6 @@
 
 [[redirects]]
   from = "/package-lock.json"
-  to = "/404.html"
-  status = 404
-  force = true
-
-# Stray id file in the publish root. Not a page.
-[[redirects]]
-  from = "/40602f6b-ecf3-406b-a8e5-2e9f601462b6.txt"
   to = "/404.html"
   status = 404
   force = true
