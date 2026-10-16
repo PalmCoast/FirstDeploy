@@ -6,6 +6,7 @@ Marketing site for https://firstdeploy.ai
 
 ```bash
 node firstdeploy/scripts/check-clean.mjs
+npm ci   # functions import @netlify/blobs; without node_modules /go/* returns 502
 netlify deploy --prod --dir . --site 59a673be-0880-43e0-a443-756e22cbf4ec
 ```
 
