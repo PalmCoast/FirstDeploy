@@ -37,6 +37,13 @@
 - [Vs Smith.ai](https://firstdeploy.ai/vs/smith-ai): First Deploy and Smith.ai, using Smith.ai's published plans.
 - [Vs Ruby](https://firstdeploy.ai/vs/ruby): First Deploy and Ruby, using Ruby's published plans.
 - [Vs Goodcall](https://firstdeploy.ai/vs/goodcall): First Deploy and Goodcall, using Goodcall's published plans.
+- [Compare hub](https://firstdeploy.ai/compare): all First Deploy comparison pages, prices checked Oct 19, 2026.
+- [Vs Rosie](https://firstdeploy.ai/vs/rosie): done-for-you desk vs Rosie's self-serve AI answering plans.
+- [Vs RepForce.ai](https://firstdeploy.ai/vs/repforce): after-hours trade desk vs RepForce's AI sales-rep platform.
+- [Vs Sameday and Avoca](https://firstdeploy.ai/vs/sameday): for shops not on ServiceTitan.
+- [Best AI receptionist for small HVAC (2026)](https://firstdeploy.ai/best-ai-receptionist-small-hvac): dated table of vendors' own published prices; First Deploy is the author.
+- [AI receptionist vs answering service](https://firstdeploy.ai/ai-receptionist-vs-answering-service): handling after-hours emergency calls.
+- [Done-for-you AI receptionist](https://firstdeploy.ai/done-for-you-ai-receptionist): what First Deploy's setup includes.
 - [Terms](https://firstdeploy.ai/terms): Product and consult terms.
 - [Privacy](https://firstdeploy.ai/privacy): How we handle what you send.
 - [Full details](https://firstdeploy.ai/llms-full.txt): Each service in detail, plus an FAQ.
