@@ -55,6 +55,14 @@
   status = 404
   force = true
 
+# IndexNow key must be readable at the site root (Reed GO 2026-10-19).
+# Pass-through rewrite to the identical key file under /indexnow/; matches before the stray-file rule below.
+[[redirects]]
+  from = "/40602f6b-ecf3-406b-a8e5-2e9f601462b6.txt"
+  to = "/indexnow/40602f6b-ecf3-406b-a8e5-2e9f601462b6.txt"
+  status = 200
+  force = true
+
 # Stray id file in the publish root. Not a page.
 [[redirects]]
   from = "/40602f6b-ecf3-406b-a8e5-2e9f601462b6.txt"
