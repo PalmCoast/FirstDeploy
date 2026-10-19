@@ -217,6 +217,77 @@
   to = "/done-for-you-ai-receptionist.html"
   status = 200
 
+[[redirects]]
+  from = "/ai-receptionist"
+  to = "/ai-receptionist.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/hvac"
+  to = "/hvac.html"
+  status = 200
+
+[[redirects]]
+  from = "/plumbing"
+  to = "/plumbing.html"
+  status = 200
+
+[[redirects]]
+  from = "/roofing"
+  to = "/roofing.html"
+  status = 200
+
+[[redirects]]
+  from = "/electrical"
+  to = "/electrical.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/hvac/daytona-beach-fl"
+  to = "/ai-receptionist/hvac/daytona-beach-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/hvac/deltona-fl"
+  to = "/ai-receptionist/hvac/deltona-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/hvac/ormond-beach-fl"
+  to = "/ai-receptionist/hvac/ormond-beach-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/hvac/palm-coast-fl"
+  to = "/ai-receptionist/hvac/palm-coast-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/plumbers/daytona-beach-fl"
+  to = "/ai-receptionist/plumbers/daytona-beach-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/plumbers/deltona-fl"
+  to = "/ai-receptionist/plumbers/deltona-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/plumbers/ormond-beach-fl"
+  to = "/ai-receptionist/plumbers/ormond-beach-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/plumbers/palm-coast-fl"
+  to = "/ai-receptionist/plumbers/palm-coast-fl.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-receptionist/roofing/palm-coast-fl"
+  to = "/ai-receptionist/roofing/palm-coast-fl.html"
+  status = 200
+
 [[headers]]
   for = "/og.png"
   [headers.values]
